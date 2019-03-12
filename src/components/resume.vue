@@ -1,5 +1,11 @@
 <template>
     <div>
+        <blockquote class="blockquote">
+            <!-- <span class="qu">"</span> -->
+            {{resume.description}}
+            <!-- <span class="qu">"</span> -->
+        </blockquote>
+        
         <Goals
             :goals="resume.goals"
         />
@@ -44,24 +50,8 @@ export default {
 
 <style>
 
-/* .skillbox {
- 
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+blockquote {
+    border-left: solid 4px rgba(0,0,0,0.54);
+    margin-left: 4px;
 }
-.skillbox *::first-letter {
-    text-transform: capitalize;
-}
-.skillbox h3 {
-    justify-self: center;
-}
-span.heading-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-span.heading-wrapper i {
-    justify-self: flex-end;
-} */
 </style>
